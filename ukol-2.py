@@ -498,7 +498,7 @@ seznam_statu = []
 for stat in staty:
     if stat["region"] == muj_region:
         seznam_statu.append(stat["name"])
-    else:
-        print("Neznámý region")
 
 print(seznam_statu)
+if not seznam_statu:
+    print("Neznámý region")
