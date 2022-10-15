@@ -1,3 +1,19 @@
+# Zadání:
+
+# V kódu níže na stránce vidíš seznam slovníků s informacemi o státech světa. 
+# # O každém státu tam vidíš následující informace:
+# název státu (name),
+# hlavní město (capital),
+# region (region),
+# subregion (subregion),
+# populace (population),
+# rozloha (area),
+# Giniho koeficient (gini).
+
+# Vytvoř program, který se uživatele zeptá na region, který ho zajímá. 
+# Následně projdi seznam a vypiš všechny státy, které leží v regionu. 
+# Pokud program žádný stát pro daný region nenajde, vypiš text "Neznámý region".
+
 staty = [
     {'name': 'Afghanistan', 'capital': 'Kabul', 'region': 'Asia', 'subregion': 'Southern Asia', 'population': 27657145,
      'area': 652230.0, 'gini': 27.8},
