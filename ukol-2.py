@@ -2,6 +2,7 @@
 
 # V kódu níže na stránce vidíš seznam slovníků s informacemi o státech světa. 
 # O každém státu tam vidíš následující informace:
+
 # název státu (name),
 # hlavní město (capital),
 # region (region),
