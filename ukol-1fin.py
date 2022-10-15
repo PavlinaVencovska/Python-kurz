@@ -1,3 +1,4 @@
+# Zadání:
 # Níže máš slovník, který obsahuje kódy balíků s informací, zda již byl balík předán kurýrovi k doručení. 
 # Pokud byl předán, má hodnotu True, v opačném případě má hodnotu False.
 
