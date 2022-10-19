@@ -15,28 +15,26 @@
 # Tvůj program nejprve ověří pomocí první funkce správnost telefonního čísla. 
 # Pokud není platné, vypíše chybu, v opačném případě se zeptá na text zprávy a pomocí druhé funkce určí její cenu, kterou vypíše uživateli.
 
+import math
+
 prijemce = str(input("Zadej telefonni cislo: "))
 
 def delka_tel_cisla(prijemce):
-    if len(prijemce) == 9 or len(prijemce) == 13:
-        return True
-    else: 
-        print("Cislo nema spravny format.")
-        return False
+    return len(prijemce) == 9 or len(prijemce) == 13
 
+zprava = ""
+    
 if delka_tel_cisla(prijemce):
     zprava = str(input("Napis zpravu: "))
 else:
-    prijemce = str(input("Zkus to znovu."))
-
-import math
+    prijemce = str(input("Cislo nema spravny format."))
 
 def cena_zpravy(zprava):
     if len(zprava) % 180 == 0:
         fin_cena = (len(zprava) / 180) * 3 
         print(f"Cena zpravy je : {fin_cena}")
     else:
-        fin_cena = ((math.floor(len(zprava) / 180)) * 3 + 3)
+        fin_cena = (math.ceil(len(zprava) / 180)) * 3
         print(f"Cena zpravy je: {fin_cena}")
 
 cena_zpravy(zprava)
