@@ -23,21 +23,22 @@ def delka_tel_cisla(prijemce):
     return len(prijemce) == 9 or len(prijemce) == 13
 
 zprava = ""
+def cena_zpravy(zprava):
+    pass
     
 if delka_tel_cisla(prijemce):
     zprava = str(input("Napis zpravu: "))
+    def cena_zpravy(zprava):
+        if len(zprava) == 0:
+            print(f"Zprava je prazdna. Zkus to znovu.")
+        else:
+            cena = (math.ceil(len(zprava) / 180)) * 3
+            print(f"Cena zpravy je: {cena}")
 else:
     prijemce = str(input("Cislo nema spravny format."))
 
-def cena_zpravy(zprava):
-    if len(zprava) % 180 == 0:
-        fin_cena = (len(zprava) / 180) * 3 
-        print(f"Cena zpravy je : {fin_cena}")
-    else:
-        fin_cena = (math.ceil(len(zprava) / 180)) * 3
-        print(f"Cena zpravy je: {fin_cena}")
-
 cena_zpravy(zprava)
+
 
 
 
