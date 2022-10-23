@@ -1,5 +1,4 @@
 # Zadání:
-
 # Uvažuj, že píšeš jednoduchou aplikaci pro zasílání SMS zpráv. 
 # Napiš program, který provede následující činnosti:
 
