@@ -507,7 +507,6 @@ staty = [
      'area': 390757.0}
 ]
 
-
 muj_region = input("Zadej region: ")
 
 seznam_statu = []
