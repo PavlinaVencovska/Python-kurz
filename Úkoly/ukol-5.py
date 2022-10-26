@@ -50,6 +50,7 @@ class Koronavirus(Nemoc):
         " ,".join(self.varianty)
         return f"{super().__str__()} Vznikla/y varianta/y {self.varianty}"
 
+
 corona = Koronavirus("Corona", "tyden", "0", "primo exponencionalni")
 print(corona)
 chripka = Nemoc("Chripecka", "2 dny", "0", "dost snadny")
