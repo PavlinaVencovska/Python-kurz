@@ -1,5 +1,4 @@
-# # Zadání:
-
+# Zadání:
 # Vytvor tridu Koronavirus ktera dedi ze tridy Nemoc a to nasledujicim zpusobem:
 
 # Ze tridy Nemoc dedi beze zmeny chovani:
