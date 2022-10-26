@@ -1,4 +1,5 @@
 # # Zadání:
+
 # Vytvor tridu Koronavirus ktera dedi ze tridy Nemoc a to nasledujicim zpusobem:
 
 # Ze tridy Nemoc dedi beze zmeny chovani:
@@ -49,7 +50,6 @@ class Koronavirus(Nemoc):
     def __str__(self):
         " ,".join(self.varianty)
         return f"{super().__str__()} Vznikla/y varianta/y {self.varianty}"
-
 
 corona = Koronavirus("Corona", "tyden", "0", "primo exponencionalni")
 print(corona)
