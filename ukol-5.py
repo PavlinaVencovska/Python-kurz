@@ -47,8 +47,7 @@ class Koronavirus(Nemoc):
         self.varianty.append(varianta)
 
     def __str__(self):
-        " ,".join(self.varianty)
-        return f"{super().__str__()} Vznikla/y varianta/y {self.varianty}"
+        return f"{super().__str__()} Vznikla/y varianta/y {', '.join(self.varianty)}."
 
 corona = Koronavirus("Corona", "tyden", "0", "primo exponencionalni")
 print(corona)
