@@ -1,21 +1,11 @@
 with open("text.txt", encoding="utf-8") as file:
     radky = file.readlines()
 
-print(radky)
-
 uprava_znamek = []
 
-for radek in radky:
-    if radek[0][1] == "ř":
-        nova_znamka = radek[0][1].replace("ř", "A")
+for radek in radky[1:]:
+    uprava_znamek = radek.replace("1","A").replace("2","B").replace("3","C").replace("4","D").replace("5", "F")
+    print(uprava_znamek)
 
-       
-        # spz, km = radek.split(' )
-        
-
-
-# radky = [radek.split('\t') for radek in radky]
-# radky = [[radek[0], float(radek[1])] for radek in radky]
-# print(radky)
-
-#replace() metoda
+with open("text.txt", mode="w", encoding="utf-8") as output:
+    output.writelines(uprava_znamek)
