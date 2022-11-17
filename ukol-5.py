@@ -19,7 +19,6 @@
 # seznam = ['a', 'b', 'c']
 # ' ,'.join(seznam)
 # print(seznam) # 'a, b, c'
-
 # Hodnoty atributu inkubacni_doba, pocet_obeti a sireni budou v __init__ metode tridy Koronavirus predane __init__ metode materske tridy (pres super().__init__(...)).
 
 class Nemoc:
