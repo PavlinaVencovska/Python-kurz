@@ -40,14 +40,11 @@ class Koronavirus(Nemoc):
         super().__init__(jmeno, inkubacni_doba, pocet_obeti, sireni)
         self.varianty = []
 
-    def zmen_pocet_obeti(self, pocet_obeti):
-        super().zmen_pocet_obeti(pocet_obeti)
-
     def pridej_variantu(self, varianta):
         self.varianty.append(varianta)
 
     def __str__(self):
-        return f"{super().__str__()} Vznikla/y varianta/y {', '.join(self.varianty)}."
+        return f"{super().__str__()} Vznikla/y varianta/y {' ,'.join(self.varianty)}"
 
 corona = Koronavirus("Corona", "tyden", "0", "primo exponencionalni")
 print(corona)
